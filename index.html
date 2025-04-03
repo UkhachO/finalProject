@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    
+    <div class="main_container">
+
+        <header class="header">
+
+            <navbar class="logo_search" id="logoSearch">
+
+                <img class="header_logo" onclick="location.href='index.html'" style="cursor: pointer;" src="img/logo/meetup_logo.svg" alt="Meetup logo">
+
+                <nav class="header_inputs" id="headerInputs">
+                    
+                    <div class="input_wrapper">
+
+                        <span class="material-symbols-outlined">
+                            search
+                        </span>
+                        <input id="search_input" type="text" placeholder="Search events">
+
+                    </div>
+                    
+                    <input id="input_city" type="text" value="Mountain View, CA">
+                    <button id="header_button"><span class="material-symbols-outlined">search</span></button>
+
+                </nav>
+
+                <nav class="language_authorization" id="languageAuth">
+                
+                    <div class="language">
+                
+                        <span class="material-symbols-outlined">
+                            language
+                        </span>
+                        <p>English</p>
+                
+                    </div>
+                
+                    <p>Log in</p>
+                    <button id="sing_in_button">Sign up</button>
+                
+                </nav>
+
+            </navbar>
+
+            
+   
+        </header>
+
+        <main class="content_container">
+        
+            <section class="intro">
+        
+                <div class="intro_text">
+                    
+                    <h1>The people platform—Where interests become friendships</h1>
+                    <p>Whatever your interest, from hiking and reading to networking and skill sharing, there are thousands of people who share it on Meetup. Events are happening every day—sign up to join the fun.</p>
+
+                    <button id="intro_button" onclick="location.href='filter.html'">Join Meetup</button>
+
+                </div>
+        
+                <div class="intro_img_div">
+                    <img class="intro_img" src="img/svg/irl_event.svg" alt="Event image">
+                </div>
+        
+            </section>
+        
+            <div class="events">
+        
+                <section class="events_near">
+
+                    <div class="near_filter">
+
+                        <h2>Events near</h2>
+                        <div class="city_filter">
+                        
+                            <p>Mountain View, CA</p>
+                            
+                            <span class="material-symbols-outlined">
+                                border_color
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <p class="see_all">See all events</p>
+
+                </section>
+        
+                <section class="events_block">
+
+                    <div class="events_card one">
+
+                        <img class="events_image" src="img/png/group-cover-10-wide.png" alt="Day Trading Idea and Strategy">
+                        
+                        <div class="event_location_div">
+
+                            <h2 class="event_name">Day Trading Idea and Strategy</h2>
+                            <p class="event_location">Business (5 km)</p>
+                            
+                            <div class="event_date_div">
+                            
+                                <span class="material-symbols-outlined calendar">
+                                    calendar_today
+                                </span>
+                                <p class="event_date">Mon, Mar 18 · 7:00 PM PDT</p>
+                            
+                            </div>
+                            
+                            <div class="event_info">
+                            
+                                <div class="event_going">
+                            
+                                    <span class="material-symbols-outlined calendar">
+                                        check_circle
+                                    </span>
+                                    <p class="going_content">1 going</p>
+                            
+                                </div>
+                            
+                                <div class="event_price">
+                            
+                                    <span class="material-symbols-outlined calendar">
+                                        confirmation_number
+                                    </span>
+                                    <p class="price_content">Free</p>
+                            
+                                </div>
+                            
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="events_card two">
+
+                        <img class="events_image" src="img/png/event_519345287.png" alt="Let's Talk Networking: JPMorgan Chase in Palo Alto">
+                        <h2 class="event_name">Let's Talk Networking: JPMorgan Chase in Palo Alto</h2>
+                        <p class="event_location">Business (25 km)</p>
+                        
+                        <div class="event_date_div">
+                        
+                            <span class="material-symbols-outlined calendar">
+                                calendar_today
+                            </span>
+                            <p class="event_date">Tue, Mar 19 · 5:00 PM PDT</p>
+                        
+                        </div>
+                        
+                        <div class="event_info">
+                        
+                            <div class="event_going">
+                        
+                                <span class="material-symbols-outlined calendar">
+                                    check_circle
+                                </span>
+                                <p class="going_content">41 going</p>
+                        
+                            </div>
+                        
+                            <div class="event_price">
+                        
+                                <span class="material-symbols-outlined calendar">
+                                    confirmation_number
+                                </span>
+                                <p class="price_content">Free</p>
+                        
+                            </div>
+                        
+                        </div>
+
+                    </div>
+
+                    <div class="events_card three">
+
+                        <img class="events_image" src="img/png/event_519446442.png" alt="Tech Talks & Quiz: Next-Gen Database Solutions for Emerging Use Cases">
+                        <h2 class="event_name">Tech Talks & Quiz: Next-Gen Database Solutions for Emerging Use Cases</h2>
+                        <p class="event_location">Technology</p>
+                        
+                        <div class="event_date_div">
+                        
+                            <span class="material-symbols-outlined calendar">
+                                calendar_today
+                            </span>
+                            <p class="event_date">Wed, Mar 13 · 6:00 PM PDT</p>
+                        
+                        </div>
+                        
+                        <div class="event_info">
+                        
+                            <div class="event_going">
+                        
+                                <span class="material-symbols-outlined calendar">
+                                    check_circle
+                                </span>
+                                <p class="going_content">40 going</p>
+                        
+                            </div>
+                        
+                            <div class="event_price">
+                        
+                                <span class="material-symbols-outlined calendar">
+                                    confirmation_number
+                                </span>
+                                <p class="price_content">Free</p>
+                        
+                            </div>
+                        
+                        </div>
+
+                    </div>
+
+                    <div class="events_card four"> 
+
+                        <img class="events_image" src="img/png/event_519596732.webp.png" alt="Day Trading Idea and Strategy">
+                        <h2 class="event_name">INFORMS San Francisco Chapter In-Person Event</h2>
+                        <p class="event_location">Health and Wellbeing (50 km)</p>
+                        
+                        <div class="event_date_div">
+                        
+                            <span class="material-symbols-outlined calendar">
+                                calendar_today
+                            </span>
+                            <p class="event_date">Thu, Mar 28 · 5:00 PM PDT</p>
+                        
+                        </div>
+                        
+                        <div class="event_info">
+                        
+                            <div class="event_going">
+                        
+                                <span class="material-symbols-outlined calendar">
+                                    check_circle
+                                </span>
+                                <p class="going_content">41 going</p>
+                        
+                            </div>
+                        
+                            <div class="event_price">
+                        
+                                <span class="material-symbols-outlined calendar">
+                                    confirmation_number
+                                </span>
+                                <p class="price_content">Free</p>
+                        
+                            </div>
+                        
+                        </div>
+
+                    </div>
+
+                    <div class="events_card five">
+
+                        <img class="events_image" src="img/png/event_518548420.png" alt="AI Wednesdays - Meet and Greet!">
+                        <h2 class="event_name">AI Wednesdays - Meet and Greet!</h2>
+                        <p class="event_location">Technology (5 km)</p>
+                        
+                        <div class="event_date_div">
+                        
+                            <span class="material-symbols-outlined calendar">
+                                calendar_today
+                            </span>
+                            <p class="event_date">Wed, Mar 13 · 6:30 PM PDT</p>
+                        
+                        </div>
+                        
+                        <div class="event_info">
+                        
+                            <div class="event_going">
+                        
+                                <span class="material-symbols-outlined calendar">
+                                    check_circle
+                                </span>
+                                <p class="going_content">29 going</p>
+                        
+                            </div>
+                        
+                            <div class="event_price">
+                        
+                                <span class="material-symbols-outlined calendar">
+                                    confirmation_number
+                                </span>
+                                <p class="price_content">Free</p>
+                        
+                            </div>
+                        
+                        </div>
+
+                    </div>
+
+                    <div class="events_card six">
+
+                        <img class="events_image" src="img/png/event_519616239.png" alt="ROS By-The-Bay March 2024">
+                        <div class="event_location_div">
+                        
+                            <h2 class="event_name">Day Trading Idea and Strategy</h2>
+                            <p class="event_location">Business (5 km)</p>
+                        
+                            <div class="event_date_div">
+                        
+                                <span class="material-symbols-outlined calendar">
+                                    calendar_today
+                                </span>
+                                <p class="event_date">Mon, Mar 18 · 7:00 PM PDT</p>
+                        
+                            </div>
+                        
+                            <div class="event_info">
+                        
+                                <div class="event_going">
+                        
+                                    <span class="material-symbols-outlined calendar">
+                                        check_circle
+                                    </span>
+                                    <p class="going_content">1 going</p>
+                        
+                                </div>
+                        
+                                <div class="event_price">
+                        
+                                    <span class="material-symbols-outlined calendar">
+                                        confirmation_number
+                                    </span>
+                                    <p class="price_content">Free</p>
+                        
+                                </div>
+                        
+                            </div>
+                        
+                        </div>
+
+                    </div>
+
+                    <div class="events_card seven">
+                        
+                        <img class="events_image" src="img/png/event_519189715.png" alt="Free Christian Singles' Dinner">
+
+                        <div class="event_location_div">
+
+                            <h2 class="event_name">Free Christian Singles' Dinner</h2>
+                            <p class="event_location location_margin">Hobbies and Passions (10 km)</p>
+                            
+                            <div class="event_date_div">
+                            
+                                <span class="material-symbols-outlined calendar">
+                                    calendar_today
+                                </span>
+                                <p class="event_date">Fri, Mar 29 · 6:00 PM PDT</p>
+                            
+                            </div>
+                            
+                            <div class="event_info">
+                            
+                                <div class="event_going">
+                            
+                                    <span class="material-symbols-outlined calendar">
+                                        check_circle
+                                    </span>
+                                    <p class="going_content">11 going</p>
+                            
+                                </div>
+                            
+                                <div class="event_price">
+                            
+                                    <span class="material-symbols-outlined calendar">
+                                        confirmation_number
+                                    </span>
+                                    <p class="price_content">Free</p>
+                            
+                                </div>
+                            
+                            </div>
+
+                        </div>
+                        
+                    </div>
+
+                    <div class="events_card eight">
+
+                        <img class="events_image" src="img/png/event_519614558.png" alt="In-person: Deep Dive into RAG Architectures (Food served)">
+
+                        <div class="event_location_div">
+
+                            <h2 class="event_name">In-person: Deep Dive into RAG Architectures (Food served)</h2>
+                            <p class="event_location location_margin">Hobbies and Passions (50 km)</p>
+                            
+                            <div class="event_date_div">
+                            
+                                <span class="material-symbols-outlined calendar">
+                                    calendar_today
+                                </span>
+                                <p class="event_date">Thu, Mar 14 · 5:00 PM PDT</p>
+                            
+                            </div>
+                            
+                            <div class="event_info">
+                            
+                                <div class="event_going">
+                            
+                                    <span class="material-symbols-outlined calendar">
+                                        check_circle
+                                    </span>
+                                    <p class="going_content">16 going</p>
+                            
+                                </div>
+                            
+                                <div class="event_price">
+                            
+                                    <span class="material-symbols-outlined calendar">
+                                        confirmation_number
+                                    </span>
+                                    <p class="price_content">Free</p>
+                            
+                                </div>
+                            
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+        
+                <section class="upcoming_events">
+        
+                    <div class="upcoming_events_heading">
+        
+                        <div class="upcoming_events_text">
+                            <h2>Upcoming online events</h2>
+                        </div>
+        
+                        <div class="upcoming_events_seeAll">
+                            <p class="see_all">See all events</p>
+                        </div>
+        
+                    </div>
+        
+                    <div class="upcoming_events_block">
+                        
+                        <div class="events_card eight">
+                        
+                            <img class="events_image" src="img/png/event_519688853.png" alt="Amazing On-Demand 15 Min Interviews with Top Coaches and Speakers">
+                            
+                            <div class="event_location_div">
+
+                                <h2 class="event_name">Amazing On-Demand 15 Min Interviews with Top Coaches and Speakers</h2>
+                                <p class="event_location location_margin">Business (25 km)</p>
+                                
+                                <div class="event_date_div">
+                                
+                                    <span class="material-symbols-outlined calendar">
+                                        calendar_today
+                                    </span>
+                                    <p class="event_date">Thu, Mar 14 · 6:00 PM PDT</p>
+                                
+                                </div>
+                                
+                                <div class="event_info">
+                                
+                                    <div class="event_going">
+                                
+                                        <span class="material-symbols-outlined calendar">
+                                            check_circle
+                                        </span>
+                                        <p class="going_content">3 going</p>
+                                
+                                    </div>
+                                
+                                    <div class="event_price">
+                                
+                                        <span class="material-symbols-outlined calendar">
+                                            confirmation_number
+                                        </span>
+                                        <p class="price_content">Free</p>
+                                
+                                    </div>
+                                
+                                </div>
+
+                            </div>
+                        
+                        </div>
+
+                        <div class="events_card">
+                        
+                            <img class="events_image" src="img/png/272x153.png" alt="Vision Pro Developers Online Meetup">
+                            
+                            <div class="event_location_div">
+
+                                <h2 class="event_name">Vision Pro Developers Online Meetup</h2>
+                                <p class="event_location">Technology</p>
+                                
+                                <div class="event_date_div">
+                                
+                                    <span class="material-symbols-outlined calendar">
+                                        calendar_today
+                                    </span>
+                                    <p class="event_date">Wed, Mar 13 · 7:00 PM PDT</p>
+                                
+                                </div>
+                                
+                                <div class="event_info">
+                                
+                                    <div class="event_going">
+                                
+                                        <span class="material-symbols-outlined calendar">
+                                            check_circle
+                                        </span>
+                                        <p class="going_content">51 going</p>
+                                
+                                    </div>
+                                
+                                    <div class="event_price">
+                                
+                                        <span class="material-symbols-outlined calendar">
+                                            confirmation_number
+                                        </span>
+                                        <p class="price_content">Free</p>
+                                
+                                    </div>
+                                
+                                </div>
+
+                            </div>
+                        
+                        </div>
+
+                        <div class="events_card">
+                        
+                            <img class="events_image" src="img/png/event_519453986.png" alt="Significant Musical Moments">
+                            
+                            <div class="event_location_div">
+
+                                <h2 class="event_name">Significant Musical Moments</h2>
+                                <p class="event_location">Hobbies and Passions (10 km)</p>
+                                
+                                <div class="event_date_div">
+                                
+                                    <span class="material-symbols-outlined calendar">
+                                        calendar_today
+                                    </span>
+                                    <p class="event_date">Wed, Mar 13 · 6:00 PM PDT</p>
+                                
+                                </div>
+                                
+                                <div class="event_info">
+                                
+                                    <div class="event_going">
+                                
+                                        <span class="material-symbols-outlined calendar">
+                                            check_circle
+                                        </span>
+                                        <p class="going_content">16 going</p>
+                                
+                                    </div>
+                                
+                                    <div class="event_price">
+                                
+                                        <span class="material-symbols-outlined calendar">
+                                            confirmation_number
+                                        </span>
+                                        <p class="price_content">Free</p>
+                                
+                                    </div>
+                                
+                                </div>
+
+                            </div>
+                        
+                        </div>
+
+                        <div class="events_card">
+                        
+                            <img class="events_image" src="img/png/event_518832943.png" alt="FREE Webinar: Introduction to Power BI">
+                            
+                            <div class="event_location_div">
+
+                                <h2 class="event_name">FREE Webinar: Introduction to Power BI</h2>
+                                <p class="event_location location_margin">Technology</p>
+                                
+                                <div class="event_date_div">
+                                
+                                    <span class="material-symbols-outlined calendar">
+                                        calendar_today
+                                    </span>
+                                    <p class="event_date">Thu, Mar 14 · 5:30 PM PDT</p>
+                                
+                                </div>
+                                
+                                <div class="event_info">
+                                
+                                    <div class="event_going">
+                                
+                                        <span class="material-symbols-outlined calendar">
+                                            check_circle
+                                        </span>
+                                        <p class="going_content">33 going</p>
+                                
+                                    </div>
+                                
+                                    <div class="event_price">
+                                
+                                        <span class="material-symbols-outlined calendar">
+                                            confirmation_number
+                                        </span>
+                                        <p class="price_content">Free</p>
+                                
+                                    </div>
+                                
+                                </div>
+
+                            </div>
+                        
+                        </div>
+
+                    </div>
+        
+                </section>
+        
+                <section class="join_meetup">
+
+                    
+        
+                    <div class="join_meetup_content">
+
+                        <h2>Join Meetup</h2>
+                        <p>People use Meetup to meet new people, learn new things, find support, get out of their comfort zones, and pursue their passions, together. Membership is free.</p>
+                        <button id="join_sing_up_button">Sign up</button>
+
+                    </div>
+        
+                    <div class="join_meetup_img">
+                        <img class="join_meetup_img_content" src="img/png/image.png" alt="Join meetup">
+                    </div>
+        
+                </section>
+
+                <section class="top_categories_container">
+
+                    <div class="categories_header">
+
+                        <h2>Explore top categories</h2>
+
+                    </div>
+
+                    <div class="categories_block">
+
+                        <button class="categories_button">
+
+                            <img src="img/svg/travel_and_outdoor.svg" alt="Travel and Outdoor">
+                            <p class="categories_names">Travel and Outdoor</p>
+
+                        </button>
+
+                        <button class="categories_button">
+
+                            <img src="img/svg/social_activities.svg" alt="Social Activities">
+                            <p class="categories_names">Social Activities</p>
+
+                        </button>
+
+                        <button class="categories_button">
+
+                            <img src="img/svg/hobbies_and_passions.svg" alt="Hobbies and Passions">
+                            <p class="categories_names">Hobbies and Passions</p>
+
+                        </button>
+
+                        <button class="categories_button">
+
+                            <img src="img/svg/sports_and_fitness.svg" alt="Sports and Fitness">
+                            <p class="categories_names">Sports and Fitness</p>
+
+                        </button>
+
+                        <button class="categories_button">
+
+                            <img src="img/svg/health_and_wellness.svg" alt="Health and Wellbeing">
+                            <p class="categories_names">Health and Wellbeing</p>
+
+                        </button>
+
+                        <button class="categories_button">
+
+                            <img src="img/svg/technology.svg" alt="Technology">
+                            <p class="categories_names">Technology</p>
+
+                        </button>
+
+                        <button class="categories_button">
+
+                            <img src="img/svg/art_and_culture.svg" alt="Art and Culture">
+                            <p class="categories_names">Art and Culture</p>
+
+                        </button>
+
+                        <button class="categories_button">
+
+                            <img src="img/svg/games.svg" alt="Games">
+                            <p class="categories_names">Games</p>
+
+                        </button>
+
+                    </div>
+
+                </section>
+
+                <section class="popular_cities_container">
+
+                    <div class="popular_cities_text">
+
+                        <h2>Popular cities on Meetup</h2>
+                        <p>Looking for fun things to do near you? See what Meetup organizers are planning in cities around the country.</p>
+
+                    </div>
+
+                    <div class="popular_cities_block">
+
+                        <div class="popular_cities_card">
+                            
+                            <img class="popular_cities_img" src="img/png/new_york.png" alt="New York">
+                            <h3 class="popular_cities_name">New York</h3>
+
+                        </div>
+
+                        <div class="popular_cities_card">
+
+                            <img class="popular_cities_img" src="img/png/san_francisco.png" alt="San Francisco">
+                            <h3 class="popular_cities_name">San Francisco</h3>
+
+                        </div>
+
+                        <div class="popular_cities_card">
+
+                            <img class="popular_cities_img" src="img/png/chicago.png"alt="Chicago">
+                            <h3 class="popular_cities_name">Chicago</h3>
+
+                        </div>
+
+                        <div class="popular_cities_card nashville">
+
+                            <img class="popular_cities_img " src="img/png/nashville.png" alt="Nashville">
+                            <h3 class="popular_cities_name">Nashville</h3>
+
+                        </div>
+
+                        <div class="popular_cities_card">
+
+                            <img class="popular_cities_img" src="img/png/miami.png" alt="Miami">
+                            <h3 class="popular_cities_name">Miami</h3>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section class="how_meetup_container">
+
+                    <div class="how_meetup_text">
+
+                        <h2>How Meetup works</h2>
+
+                    </div>
+
+                    <div class="how_meetup_block">
+
+                        <div class="how_meetup_block_content">
+
+                            <div class="how_meetup_block_content_container">
+
+                                <span class="material-symbols-outlined search_add_icon search_icon">
+                                    search
+                                </span>
+                                
+                                <div class="how_meetup_block_text_content">
+                                
+                                    <h2>Discover events and groups</h2>
+                                    <p class="just_text">See who's hosting local events for all the things you love</p>
+                                    <p class="special_text">Search events and groups</p>
+                                
+                                </div>
+
+                            </div>
+                
+
+                        </div>
+
+                        <div class="how_meetup_block_content">
+
+                            <div class="how_meetup_block_content_container">
+                            
+                                <span class="material-symbols-outlined search_add_icon add_icon">
+                                    add
+                                </span>
+                            
+                                <div class="how_meetup_block_text_content">
+                            
+                                    <h2>Start a group to host events</h2>
+                                    <p class="just_text">Create your own Meetup group, and draw from a community of millions</p>
+                                    <p class="special_text">Start a group</p>
+                            
+                                </div>
+                            
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section class="frendships_container">
+                
+                    <div class="frendships_text">
+                        <h3>Friendships are made on Meetup</h3>
+                        <p>Since 2002, members have used Meetup to make new friends, meet like-minded people, spend time on hobbies, and connect with locals over shared interests. Learn how.</p>
+                    </div>
+                
+                    <div class="frendships_block">
+                
+                        <div class="frendships_card">
+                            <img src="img/png/first_article.png" alt="I Used Meetup to Make Friends at Brunch">
+
+                            <h3 class="friendships_header">I Used Meetup to Make Friends at Brunch</h3>
+                            <p class="frendships_text_content">New Jersey-based writer and college student Brianna Stryker wanted to meet friends in her hometown. Learn how she used Meetup to make connections by joining a Girls Night Out Meetup group.</p>
+                            <p class="read_more">Read more</p>
+                        </div>
+                
+                        
+                        <div class="frendships_card">
+                            <img src="img/png/second_article.png" alt="How to Turn Casual Connections into Close Friendships">
+                            
+                            <h3 class="friendships_header">How to Turn Casual Connections into Close Friendships</h3>
+                            <p class="frendships_text_content">It’s proven that close friendships are harder to make as an adult. But don’t sweat it: here’s what you can do to simplify the process.</p>
+                            <p class="read_more">Read more</p>
+                        </div>
+                        
+                
+                       
+                        <div class="frendships_card">
+                            <img src="img/png/third_article.png" alt="Do You Have the “Right” Number of Friends?">
+                            
+                            <h3 class="friendships_header">Do You Have the “Right” Number of Friends?</h3>
+                            <p class="frendships_text_content">Studies from around the world have tried to help people answer this question. Learn about the three tiers of friendship and how to fulfill them.</p>
+                            <p class="read_more">Read more</p>
+                        </div>
+                        
+                
+                    </div>
+                
+                </section>
+        
+            </div>
+        
+        </main>
+
+        <footer class="footer_container">
+        
+            <div class="footer_content">
+
+                <div class="get_started">
+                    <h3>Create your own Meetup group.</h3>
+                    <button id="get_started_button">Get Started</button>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="navigation_container">
+
+                    <div class="navigation_block">
+
+                        <p class="categories_header">Your Account</p>
+                        <p class="categories_name">Sign up</p>
+                        <p class="categories_name">Log in</p>
+                        <p class="categories_name">Help</p>
+                        <p class="categories_name">Become an Affiliate</p>
+
+                    </div>
+
+                    <div class="navigation_block">
+                    
+                        <p class="categories_header">Discover</p>
+                        <p class="categories_name">Groups</p>
+                        <p class="categories_name">Calendar</p>
+                        <p class="categories_name">Topics</p>
+                        <p class="categories_name">Cities</p>
+                        <p class="categories_name">Online Events</p>
+                        <p class="categories_name">Local Guides</p>
+                        <p class="categories_name">Make Friends</p>
+                    
+                    </div>
+
+                    <div class="navigation_block">
+                    
+                        <p class="categories_header">Meetup</p>
+                        <p class="categories_name">About</p>
+                        <p class="categories_name">Blog</p>
+                        <p class="categories_name">Meetup Pro</p>
+                        <p class="categories_name">Careers</p>
+                        <p class="categories_name">Apps</p>
+                        <p class="categories_name">Podcast</p>
+                    
+                    </div>
+
+                    <div class="follow_us">
+
+                        <div class="follow_us_content">
+
+                            <p class="categories_header ">Follow us</p>
+
+                            <div class="follow_us_icon">
+                               
+                                <img src="img/svg/Facebook.svg" alt="Facebook">
+                                <img src="img/svg/Twitter.svg" alt="Twitter">
+                                <img src="img/svg/YouTube.svg" alt="YouTube">
+                                <img src="img/svg/Instagram.svg" alt="Instagram">
+                                <img src="img/svg/TikTok.svg" alt="TikTok">
+
+                            </div>
+
+                        </div>
+
+                        <div class="footer_app">
+
+                            <img src="img/svg/google_play.svg" alt="Google Play">
+                            <img src="img/svg/app_store.svg" alt="App Store">
+                            
+                        </div>
+
+                        <div class="bottom_legal_bar">
+
+                            <p class="year">© 2024 Meetup</p>
+                            <p class="legal_bar">Terms of Service</p>
+                            <p class="legal_bar">Privacy Policy</p>
+                            <p class="legal_bar">Do Not Sell or Share My Personal Data</p>
+                            <p class="legal_bar">Cookie Policy</p>
+                            <p class="legal_bar">Help</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

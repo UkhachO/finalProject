@@ -1,0 +1,97 @@
+// flex options
+@mixin flex_body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@mixin flex_start {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+@mixin flex_start_ {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+@mixin flex_center_column {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex_center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex_center_start {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@mixin flex_start_rows {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@mixin flex_start_column {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@mixin flex_end {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@mixin flex_header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+// size options
+@mixin body_size {
+    width: 100vw;
+    height: 100vh;
+}
+
+//custom options
+@mixin main_container {
+    width: 100vw;
+    max-width: 1512px;
+    margin: 0 auto;
+    padding: 0 clamp(12px, 4vw, 32px);
+    @include flex_body;
+}
+
+//font options
+@mixin h2 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0%;
+}

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    
+    <main class="main_container">
+
+        <header class="header">
+        
+            <div class="logo_search" id="logoSearch">
+        
+                <img class="header_logo" onclick="location.href='index.html'" style="cursor: pointer;" src="img/logo/meetup_logo.svg" alt="Meetup logo">
+        
+                <div class="header_inputs" id="headerInputs">
+        
+                    <div class="input_wrapper">
+        
+                        <span class="material-symbols-outlined">
+                            search
+                        </span>
+                        <input id="search_input" type="text" placeholder="Search events">
+        
+                    </div>
+        
+                    <input id="input_city" type="text" value="Mountain View, CA">
+                    <button id="header_button"><span class="material-symbols-outlined">search</span></button>
+        
+                </div>
+        
+                <div class="language_authorization" id="languageAuth">
+        
+                    <div class="language">
+        
+                        <span class="material-symbols-outlined">
+                            language
+                        </span>
+                        <p>English</p>
+        
+                    </div>
+        
+                    <p>Log in</p>
+                    <button id="sing_in_button">Sign up</button>
+        
+                </div>
+        
+            </div>
+        
+        
+        
+        </header>
+
+        <main class="content_container_filter">
+
+            <section class="events_filter">
+            
+                <div class="events_filter">
+
+                    <h2 class="event_filter_header">Events near New York, NY</h2>
+                    <p class="event_filter_text">Events</p>
+
+                    <div class="filter_bar">
+                        <select id="filter_type">
+                            <option value="">Any type</option>
+                            <option value="online">Online</option>
+                            <option value="offline">Offline</option>
+                        </select>
+                    
+                        <select id="filter_distance">
+                            <option value="">Any distance</option>
+                            <option value="10">≤ 10 km</option>
+                            <option value="25">≤ 25 km</option>
+                            <option value="50">≤ 50 km</option>
+                            <option value="100">≤ 100 km</option>
+                        </select>
+                    
+                        <select id="filter_category">
+                            <option value="">Any category</option>
+                            <option value="Technology">Technology</option>
+                            <option value="Business">Business</option>
+                            <option value="Health and Wellbeing">Health and Wellbeing</option>
+                            <option value="Social Activities">Social Activities</option>
+                            <option value="Hobbies and Passions">Hobbies and Passions</option>
+                        </select>
+                    
+                        <input type="date" id="filter_date" />
+                    </div>
+
+                </div>
+
+                <div class="events_filter_content"></div>
+            
+            </section>
+
+           
+
+            <section class="map">
+
+                <h3 class="map_find">Find events near</h3>
+                <h1 class="map_city">New York, NY</h1>
+
+                <section class="map_img_container">
+
+                    <img class="map_img" src="img/png/map-thumbnail.png" alt="Map">
+
+                    <button class="map_button" id="map_button">
+                        <p>Browse in map</p>
+                        <span class="material-symbols-outlined">
+                                open_in_full
+                        </span>
+                     </button>
+
+                </section>
+
+            </section>
+
+        </main>
+
+        <footer class="footer_container">
+        
+            <div class="footer_content">
+        
+                <div class="get_started">
+                    <h3>Create your own Meetup group.</h3>
+                    <button id="get_started_button">Get Started</button>
+                </div>
+        
+                <div class="line"></div>
+        
+                <div class="navigation_container">
+        
+                    <div class="navigation_block">
+        
+                        <p class="categories_header">Your Account</p>
+                        <p class="categories_name">Sign up</p>
+                        <p class="categories_name">Log in</p>
+                        <p class="categories_name">Help</p>
+                        <p class="categories_name">Become an Affiliate</p>
+        
+                    </div>
+        
+                    <div class="navigation_block">
+        
+                        <p class="categories_header">Discover</p>
+                        <p class="categories_name">Groups</p>
+                        <p class="categories_name">Calendar</p>
+                        <p class="categories_name">Topics</p>
+                        <p class="categories_name">Cities</p>
+                        <p class="categories_name">Online Events</p>
+                        <p class="categories_name">Local Guides</p>
+                        <p class="categories_name">Make Friends</p>
+        
+                    </div>
+        
+                    <div class="navigation_block">
+        
+                        <p class="categories_header">Meetup</p>
+                        <p class="categories_name">About</p>
+                        <p class="categories_name">Blog</p>
+                        <p class="categories_name">Meetup Pro</p>
+                        <p class="categories_name">Careers</p>
+                        <p class="categories_name">Apps</p>
+                        <p class="categories_name">Podcast</p>
+        
+                    </div>
+        
+                    <div class="follow_us">
+        
+                        <div class="follow_us_content">
+        
+                            <p class="categories_header ">Follow us</p>
+        
+                            <div class="follow_us_icon">
+        
+                                <img src="img/svg/Facebook.svg" alt="Facebook">
+                                <img src="img/svg/Twitter.svg" alt="Twitter">
+                                <img src="img/svg/YouTube.svg" alt="YouTube">
+                                <img src="img/svg/Instagram.svg" alt="Instagram">
+                                <img src="img/svg/TikTok.svg" alt="TikTok">
+        
+                            </div>
+        
+                        </div>
+        
+                        <div class="footer_app">
+        
+                            <img src="img/svg/google_play.svg" alt="Google Play">
+                            <img src="img/svg/app_store.svg" alt="App Store">
+        
+                        </div>
+        
+                        <div class="bottom_legal_bar">
+        
+                            <p class="year">© 2024 Meetup</p>
+                            <p class="legal_bar">Terms of Service</p>
+                            <p class="legal_bar">Privacy Policy</p>
+                            <p class="legal_bar">Do Not Sell or Share My Personal Data</p>
+                            <p class="legal_bar">Cookie Policy</p>
+                            <p class="legal_bar">Help</p>
+        
+                        </div>
+        
+                    </div>
+        
+                </div>
+        
+            </div>
+        
+        </footer>
+
+    </main>
+
+    
+    <script src="scripts/script.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</body>
+</html>

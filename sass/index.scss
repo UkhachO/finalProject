@@ -1,0 +1,54 @@
+@use "null";
+@use "mixins";
+@use "variables";
+@use "header";
+@use "intro";
+@use "events_near_section";
+@use "upcoming_events_section";
+@use "join_meetup";
+@use "top_categories";
+@use "popular_cities";
+@use "how_meetup_works";
+@use "friendships_are_made_on_meetup";
+@use "footer";
+@use "media";
+@use "event_filter";
+@use "media_filter";
+
+body {
+    @include mixins.flex_body;
+    @include mixins.body_size;
+    background-color: variables.$white_color;
+}
+
+button {
+    cursor: pointer;
+}
+
+.main_container {
+    @include mixins.main_container;
+    background-color: variables.$white_color;
+}
+
+.content_container {
+    width: 100vw;
+    max-width: 1196px;
+    @include mixins.flex_start_column;
+}
+
+
+.events {
+    width: 100%;
+    @include mixins.flex_start_column;
+    gap: clamp(24px, 5vw, 48px);
+}
+
+.see_all {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #00798A;
+    cursor: pointer;
+}
+

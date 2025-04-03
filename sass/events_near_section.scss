@@ -1,0 +1,135 @@
+@use "null";
+@use "mixins";
+@use "variables";
+
+.events_near {
+    width: 100%;
+    @include mixins.flex_start_rows;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: clamp(48px, 6vw, 123px);
+}
+
+.near_filter {
+    width: 100%;
+    max-width: 408px;
+    @include mixins.flex_start_rows;
+    gap: clamp(6px, 1.5vw, 19px);
+    cursor: pointer;
+
+    h2 {
+        @include mixins.h2;
+        color: #212121;
+        font-size: clamp(20px, 3vw, 28px);
+    }
+}
+
+.city_filter {
+    max-width: 240px;
+    height: clamp(36px, 5vw, 44px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 16px;
+    background-color: #F2F8F9;
+    border-radius: 8px;
+    padding: 0 clamp(8px, 2vw, 16px);
+
+    p {
+        font-weight: 600;
+        font-size: clamp(16px, 2vw, 20px);
+        color: #00798A;
+    }
+
+    span {
+        color: #00798A;
+        font-size: clamp(18px, 2.5vw, 20px);
+    }
+}
+
+.events_block {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: clamp(24px, 4vw, 36px);
+    width: 100%;
+    max-width: 1196px;
+}
+
+.event_location_div {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(8px, 2vw, 12px);
+    width: 100%;
+    max-width: 272px;
+}
+
+.events_card {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(8px, 2vw, 12px);
+    width: 100%;
+    max-width: 272px;
+    cursor: pointer;
+
+    &:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+}
+
+.events_image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9; 
+    object-fit: cover;
+    border-radius: 8px; 
+}
+
+.event_name {
+    font-weight: 600;
+    font-size: clamp(16px, 2vw, 20px);
+    line-height: 1.2;
+    color: #212121;
+}
+
+.event_location {
+    font-weight: 500;
+    font-size: clamp(14px, 1.8vw, 15px);
+    color: #707070;
+    margin: clamp(6px, 1vw, 10px) 0;
+}
+
+.event_date_div {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    .calendar {
+        font-size: clamp(16px, 2vw, 20px);
+        color: #212121;
+    }
+
+    .event_date {
+        font-size: clamp(12px, 1.5vw, 14px);
+        text-transform: uppercase;
+        color: #212121;
+    }
+}
+
+.event_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 160px;
+}
+
+.event_going,
+.event_price {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    p {
+        font-size: clamp(14px, 1.5vw, 16px);
+        color: #212121;
+    }
+}

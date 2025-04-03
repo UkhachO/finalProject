@@ -1,0 +1,21 @@
+@media (max-width: 960px) {
+  .main_container {
+    padding: 0 16px;
+  }
+
+  .map {
+    display: none;
+  }
+
+ .events_filter_content {
+    align-items: center;
+ }
+
+ .event_card {
+    width: 100%;
+ }
+
+ .filter_bar {
+    justify-content: center;
+ }
+}

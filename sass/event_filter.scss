@@ -1,0 +1,204 @@
+@use "null";
+@use "mixins";
+@use "variables";
+
+.events_filter_content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(16px, 2vw, 24px);
+    margin-top: clamp(16px, 3vw, 24px);
+}
+
+.event_card {
+    max-width: 100%;
+    border-top: 1px solid #D9D9D9;
+    padding: clamp(16px, 2.5vw, 24px) 0;
+    overflow: hidden;
+    display: flex;;
+    gap: clamp(8px, 2vw, 12px);
+    transition: 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    img {
+        width: 100%;
+        max-width: clamp(120px, 20vw, 160px);
+        height: clamp(90px, 15vw, 105px);
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .event_content {
+        padding: clamp(12px, 2vw, 16px);
+        display: flex;
+        flex-direction: column;
+        gap: clamp(6px, 1vw, 8px);
+
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #212121;
+        }
+
+        .event_info {
+            font-size: 14px;
+            color: #707070;
+        }
+
+        .event_meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            color: #505050;
+        }
+    }
+
+}
+
+.event_text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.event_date {
+    order: 0;
+    color: #7C6F50;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: clamp(12px, 2vw, 14px);
+    line-height: clamp(16px, 3vw, 20px);
+    letter-spacing: -0.35px;
+}
+
+.event_title {
+    order: 1;
+    color: #212121;
+    font-weight: 500;
+    font-size: clamp(14px, 2vw, 16px);
+    line-height: clamp(20px, 3vw, 24px);
+    letter-spacing: 0%;
+}
+
+.event_desc {
+    order: 2;
+    color: #707070;
+    font-weight: 500;
+    font-size: clamp(12px, 2vw, 14px);
+    line-height: clamp(16px, 3vw, 20px);
+    letter-spacing: 0%;
+}
+
+.event_info {
+    order: 3;
+    font-weight: 400;
+    font-size: clamp(12px, 2vw, 14px);
+    line-height: clamp(16px, 3vw, 20px);
+    letter-spacing: 0%;
+    color: #707070;
+}
+
+.filter_bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(12px, 2vw, 16px);
+    margin-top: clamp(16px, 3vw, 24px);
+
+    select,
+    input[type="date"] {
+        appearance: none;
+        outline: none;
+        background: url('data:image/svg+xml;utf8,<svg fill="gray" height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right 12px center;
+        width: 100%;
+        max-width: clamp(120px, 20vw, 148px);
+        padding: clamp(12px, 2vw, 16px);
+        font-size: 14px;
+        border: none;
+        border-radius: 40px;
+        background-color: #F6F7F8;
+        cursor: pointer;
+    }
+}
+
+.events_filter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(16px, 3vw, 24px);
+}
+
+.event_filter_text {
+    font-weight: 500;
+    font-size: clamp(16px, 2vw, 20px);
+    line-height: clamp(24px, 4vw, 28px);
+    letter-spacing: 0%;
+    color: #00798A;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.event_filter_header {
+    font-weight: 600;
+    font-size: clamp(20px, 4vw, 25px);
+    line-height: clamp(28px, 5vw, 36px);
+    letter-spacing: 0%;
+}
+
+.content_container_filter {
+    margin-top: clamp(48px, 7vh, 7%);
+    width: 100%;
+    max-width: 1196px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: clamp(16px, 3vw, 24px);
+}
+
+.map {
+    width: 100%;
+    max-width: clamp(280px, 35vw, 350px);
+    display: flex;
+    flex-direction: column;
+    max-width: clamp(280px, 35vw, 350px);
+
+   h3 {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0%;
+   }
+
+   h1 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0%;
+   }
+}
+
+.map_img_container {
+    width: 100%;
+    position: relative;
+}
+
+.map_button {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    background-color: #fff;
+    border: 2px solid #00798A;
+    padding: clamp(6px, 2vw, 8px) clamp(10px, 3vw, 12px);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: clamp(12px, 1.5vw, 14px);
+    color: #00798A;
+    width: clamp(140px, 25vw, 173px);
+    height: clamp(36px, 6vw, 41px);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}

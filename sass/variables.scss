@@ -1,0 +1,17 @@
+// Colors
+$white_color: #ffffff;
+$black_color: #000000;
+
+// Base size
+$base-font-size: 16;
+
+// Convert px to rem
+@function toRem($px) {
+    @return calc($px / $base-font-size) * 1rem;
+}
+
+// Spacing
+$space-xs: toRem(8);
+$space-sm: toRem(16);
+$space-md: toRem(24);
+$space-lg: toRem(32);

@@ -1,0 +1,82 @@
+@use "null";
+@use "mixins";
+@use "variables";
+
+.how_meetup_container {
+    width: 100%;
+    @include mixins.flex_start_column;
+    gap: clamp(16px, 4vw, 24px);
+}
+
+.how_meetup_text {
+    width: 100%;
+    @include mixins.flex_start_rows;
+
+    h2 {
+        @include mixins.h2;
+        font-size: clamp(20px, 3vw, 28px);
+        color: #212121;
+    }
+}
+
+.how_meetup_block {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: clamp(16px, 4vw, 32px);
+
+    
+}
+
+.how_meetup_block_content {
+    background-color: #F7FBFC;
+    border-radius: 8px;
+    padding: clamp(16px, 3vw, 24px);
+    @include mixins.flex_center;
+
+    &:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+}
+
+.how_meetup_block_content_container {
+    @include mixins.flex_start_rows;
+    gap: clamp(16px, 3vw, 24px);
+    align-items: flex-start;
+
+    
+}
+
+.how_meetup_block_text_content {
+    @include mixins.flex_start_;
+    gap: clamp(12px, 2vw, 16px);
+
+    h3 {
+        font-weight: 600;
+        font-size: clamp(16px, 2.5vw, 20px);
+        line-height: 1.4;
+        color: #212121;
+    }
+
+    .just_text {
+        font-size: clamp(14px, 2vw, 16px);
+        line-height: 1.5;
+        color: #212121;
+    }
+
+    .special_text {
+        font-weight: 500;
+        font-size: clamp(14px, 2vw, 16px);
+        color: #00798A;
+        cursor: pointer;
+    }
+}
+
+.search_add_icon,
+.search_icon,
+.add_icon {
+    color: #00798A;
+    font-weight: 500;
+    font-size: clamp(36px, 6vw, 60px);
+    cursor: pointer;
+}

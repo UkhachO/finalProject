@@ -1,0 +1,61 @@
+@use "null";
+@use "mixins";
+@use "variables";
+
+.frendships_container {
+    width: 100%;
+    @include mixins.flex_start_;
+    gap: clamp(24px, 4vw, 32px);
+    margin-top: clamp(30px, 5vw, 34px);
+}
+
+.frendships_text {
+    max-width: 894px;
+    @include mixins.flex_start_;
+    gap: clamp(12px, 3vw, 16px);
+
+    h3 {
+        @include mixins.h2;
+        font-size: clamp(20px, 3vw, 28px);
+        color: #212121;
+    }
+
+    p {
+        font-size: clamp(14px, 2vw, 16px);
+        line-height: 1.5;
+        color: #707070;
+    }
+}
+
+.frendships_block {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: clamp(16px, 4vw, 36px);
+}
+
+.frendships_card {
+    width: 100%;
+    max-width: 376px;
+    @include mixins.flex_start_;
+    gap: clamp(12px, 3vw, 16px);
+}
+
+.friendships_header {
+    font-weight: 600;
+    font-size: clamp(16px, 2.5vw, 21px);
+    line-height: 1.4;
+    color: #212121;
+}
+
+.frendships_text_content {
+    font-size: clamp(14px, 2vw, 16px);
+    color: #707070;
+    line-height: 1.5;
+}
+
+.read_more {
+    font-size: clamp(14px, 2vw, 16px);
+    color: #00798A;
+    cursor: pointer;
+}

@@ -1,0 +1,59 @@
+@use "null";
+@use "mixins";
+@use "variables";
+
+.intro {
+    @include mixins.flex_start_rows;
+    flex-wrap: wrap;
+    gap: clamp(24px, 5vw, 46px);
+    width: 100%;
+    max-width: 1196px;
+    margin-top: clamp(32px, 5vw, 71px);
+}
+
+.intro_text {
+    @include mixins.flex_center_start;
+    gap: clamp(16px, 3vw, 24px);
+    width: 100%;
+    max-width: 608px;
+
+    h1 {
+        font-weight: 700;
+        font-size: clamp(28px, 5vw, 42px);
+        line-height: clamp(36px, 6vw, 52px);
+        color: #212121;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: clamp(14px, 3.5vw, 16px);
+        line-height: clamp(20px, 5vw, 24px);
+        color: #212121;
+    }
+}
+
+#intro_button {
+    width: clamp(100px, 25vw, 125px);
+    height: clamp(36px, 5vw, 40px);
+    background-color: #00798A;
+    border: none;
+    color: #ffffff;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: clamp(14px, 3.5vw, 16px);
+    line-height: clamp(20px, 5vw, 24px);
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.intro_img_div {
+    @include mixins.flex_center;
+    width: 100%;
+    max-width: 379px;
+}
+
+.intro_img {
+    width: 100%;
+    max-width: 379px;
+    height: 100%;
+}

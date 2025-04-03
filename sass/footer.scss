@@ -1,0 +1,139 @@
+@use "null";
+@use "mixins";
+@use "variables";
+
+.footer_container {
+    width: 100%;
+    background-color: #212121;
+    margin-top: clamp(40px, 6vw, 64px);
+    padding: clamp(24px, 5vw, 48px) 0;
+    @include mixins.flex_center;
+}
+
+.footer_content {
+    width: 100%;
+    max-width: 1120px;
+    @include mixins.flex_start_column;
+    gap: clamp(16px, 3vw, 32px);
+}
+
+.get_started {
+    width: 100%;
+    @include mixins.flex_start_rows;
+    flex-wrap: wrap;
+    gap: clamp(16px, 4vw, 35px);
+
+    h3 {
+        font-weight: 600;
+        font-size: clamp(14px, 2vw, 16px);
+        line-height: 1.5;
+        color: #F6F7F8;
+    }
+
+    #get_started_button {
+        width: clamp(100px, 25vw, 119px);
+        height: clamp(36px, 5vw, 44px);
+        background-color: transparent;
+        border: 2px solid #ffffff;
+        border-radius: 6px;
+        color: #ffffff;
+        font-size: clamp(14px, 2vw, 16px);
+        cursor: pointer;
+    }
+}
+
+.line {
+    width: 100%;
+    border-bottom: 1px solid #707070;
+}
+
+.navigation_container {
+    width: 100%;
+    @include mixins.flex_start;
+    column-gap: clamp(14px, 17vw, 248px);
+  
+}
+
+.navigation_block {
+    max-width: 373px;
+    @include mixins.flex_start_;
+    gap: 7px;
+
+    .categories_header {
+        font-size: clamp(14px, 2vw, 16px);
+        color: #F6F7F8;
+    }
+
+    .categories_name {
+        font-size: clamp(12px, 1.8vw, 14px);
+        color: #C5C4C4;
+        cursor: pointer;
+
+        &:hover {
+                color: #ffffff;
+            }
+    }
+}
+
+.follow_us {
+    width: 100%;
+    @include mixins.flex_start_rows;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: clamp(12px, 3vw, 24px);
+    margin-top: clamp(24px, 7vw, 52px);
+
+    p {
+        color: #ffffff;
+    }
+}
+
+.follow_us_content {
+    max-width: 278px;
+    @include mixins.flex_start_;
+    gap: clamp(8px, 2vw, 16px);
+}
+
+.follow_us_icon {
+    @include mixins.flex_start_rows;
+    gap: 12px;
+    font-size: clamp(20px, 3vw, 28px);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.footer_app {
+    @include mixins.flex_start;
+    gap: 12px;
+    max-width: 295px;
+    cursor: pointer;
+    
+    img {
+        max-height: 40px;
+        height: auto;
+        width: auto;
+    }
+}
+
+.bottom_legal_bar {
+    width: 100%;
+    @include mixins.flex_start_rows;
+    flex-wrap: wrap;
+    gap: clamp(16px, 4vw, 35px);
+    margin-top: clamp(16px, 3vw, 32px);
+
+    .year {
+        font-size: clamp(12px, 1.8vw, 14px);
+        color: #ffffff;
+    }
+
+    .legal_bar {
+        font-size: clamp(12px, 1.8vw, 14px);
+        color: #C5C4C4;
+        cursor: pointer;
+
+        &:hover {
+            color: #ffffff;
+        }
+    }
+}
